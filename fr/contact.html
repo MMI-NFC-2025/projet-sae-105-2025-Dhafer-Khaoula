@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Contactez-nous pour toute question sur AdaQuest et l'effet Matilda. Nous sommes à votre écoute." />
+  <title>Formulaire de contact | AdaQuest</title>
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Homenaje&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <script type="module" src="../src/js/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <a class="header__link" href="index.html">
+    <img
+      class="header__logo header__logo--dark"
+      src="../assets/icons/logo_icon_dark.svg"
+      alt="Logo AdaQuest" />
+  </a>
+
+  <button
+    class="header__menu-btn menu-btn"
+    aria-label="menu"
+    aria-expanded="false"
+    aria-controls="mainNav">
+    <span
+      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--top"
+      aria-hidden="true"></span>
+    <span
+      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--bottom"
+      aria-hidden="true"></span>
+  </button>
+
+  <nav class="header__menu menu" id="mainNav" aria-label="Navigation principale" hidden>
+    <ul class="menu__list u-list-unstyled">
+      <li class="menu__item">
+        <a class="menu__link" href="adalovelace.html">Qui est Ada ?</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="lesoublieesdunumerique.html">Oubliées du numérique</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="leffetmatilda.html">L'effet Matilda</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="cinematographie.html">Cinématographie</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="litterature.html">Littérature</a>
+      </li>
+    </ul>
+    <ul class="menu__secondary-list u-list-unstyled">
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="contact.html">Formulaire de contact</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="glossaire.html">Glossaire</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="projets.html">Autres projets</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-section">
+    <div class="contact-container">
+      
+      <!-- Contact Header -->
+      <div class="contact-header">
+        <div class="contact-header__icon">
+          <img 
+            src="../assets/icons/userxl_light_icon.svg" 
+            alt="Icône utilisateur"
+            class="contact-header__icon-img">
+        </div>
+        <h1 class="contact-header__title">Formulaire de contact</h1>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="POST">
+        
+        <div class="contact-form__field">
+          <label for="name" class="contact-form__label">Votre nom</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            class="contact-form__input" 
+            required
+            aria-required="true"
+            placeholder="Entrez votre nom">
+        </div>
+
+        <div class="contact-form__field">
+          <label for="email" class="contact-form__label">Votre adresse mail</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            class="contact-form__input" 
+            required
+            aria-required="true"
+            placeholder="votre.email@exemple.com">
+        </div>
+
+        <div class="contact-form__field">
+          <label for="message" class="contact-form__label">Votre message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            class="contact-form__textarea" 
+            rows="8"
+            required
+            aria-required="true"
+            placeholder="Écrivez votre message ici..."></textarea>
+        </div>
+
+        <button type="submit" class="contact-form__submit">
+          <span class="contact-form__submit-text">ENVOYER</span>
+          <img 
+            src="../assets/icons/bigbig_arrow.svg" 
+            alt="" 
+            aria-hidden="true"
+            class="contact-form__submit-icon">
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__logo-link" href="index.html">
+      <img
+        class="footer__logo"
+        src="../assets/icons/logo_light.svg"
+        alt="Logo AdaQuest"
+        loading="lazy"/>
+    </a>
+
+    <div class="footer__content">
+      <div class="footer__section">
+        <h5 class="footer__title">Formulaire de contact :</h5>
+        <p class="footer__text">Nous contactez via le formulaire de contact.</p>
+        <a class="footer__link" href="contact.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Autres projets :</h5>
+        <p class="footer__text">Projets réalisés par les élèves de MMI dans le cadre du projet Matilda</p>
+        <a class="footer__link" href="projets.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">À propos</h5>
+        <p class="footer__text">Ce site a pour objectif de sensibiliser au phénomène de l'effet Matilda et de rendre hommage aux femmes scientifiques oubliées de l'histoire.</p>
+        <a class="footer__link" href="apropos.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Contact :</h5>
+        <p class="footer__text">Site réalisé par DHAFER Khaoula MM1 C2</p>
+        <address class="footer__address">
+          <a class="footer__email" href="mailto:khaoula.dhafer@univ-fcomte.fr">khaoula.dhafer@univ-fcomte.fr</a>
+        </address>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Mention légale :</h5>
+        <p class="footer__text">© 2025 - Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a></p>
+        <a class="footer__link" href="mentionslegales.html">Plus d'infos</a>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <img
+        class="footer__logo-mmi"
+        src="../assets/img/mmi_white.avif"
+        alt="Logo MMI Montbéliard"
+        width="100"
+        height="50"
+        loading="lazy" />
+      <img
+        class="footer__logo-umlp"
+        src="../assets/img/logo_umlp-white.avif"
+        alt="Logo Université Marie & Louis Pasteur"
+        width="150"
+        height="50"
+        loading="lazy" />
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+    

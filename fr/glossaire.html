@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Glossaire des termes scientifiques et techniques utilisés sur AdaQuest. Découvrez les définitions des concepts clés liés à l'effet Matilda et aux femmes scientifiques." />
+  <title>Glossaire | AdaQuest</title>
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Homenaje&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <script type="module" src="../src/js/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <a class="header__link" href="index.html">
+    <img
+      class="header__logo header__logo--dark"
+      src="../assets/icons/logo_icon_dark.svg"
+      alt="Logo AdaQuest" />
+  </a>
+
+  <button
+    class="header__menu-btn menu-btn"
+    aria-label="menu"
+    aria-expanded="false"
+    aria-controls="mainNav">
+    <span
+      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--top"
+      aria-hidden="true"></span>
+    <span
+      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--bottom"
+      aria-hidden="true"></span>
+  </button>
+
+  <nav class="header__menu menu" id="mainNav" aria-label="Navigation principale" hidden>
+    <ul class="menu__list u-list-unstyled">
+      <li class="menu__item">
+        <a class="menu__link" href="adalovelace.html">Qui est Ada ?</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="lesoublieesdunumerique.html">Oubliées du numérique</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="leffetmatilda.html">L'effet Matilda</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="cinematographie.html">Cinématographie</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="litterature.html">Littérature</a>
+      </li>
+    </ul>
+    <ul class="menu__secondary-list u-list-unstyled">
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="contact.html">Formulaire de contact</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="glossaire.html">Glossaire</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="projets.html">Autres projets</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page">
+    <section class="glossary">
+      
+      <h1 class="glossary__title">Glossaire — Projet Matilda</h1>
+      
+      <p class="glossary__intro">
+        Définitions accessibles, pédagogiques et adaptées à un public non spécialiste. Les termes sont organisés par catégories thématiques et classés par ordre alphabétique.
+      </p>
+
+      <div class="glossary__filters">
+        <button class="glossary__filter-btn glossary__filter-btn--active" data-category="all">Toutes les catégories</button>
+        <button class="glossary__filter-btn" data-category="concepts">Concepts techniques</button>
+        <button class="glossary__filter-btn" data-category="sociologie">Notions sociologiques</button>
+        <button class="glossary__filter-btn" data-category="figures">Figures féminines</button>
+        <button class="glossary__filter-btn" data-category="ouvrages">Ouvrages & essais</button>
+        <button class="glossary__filter-btn" data-category="films">Films & documentaires</button>
+        <button class="glossary__filter-btn" data-category="technologies">Technologies</button>
+      </div>
+
+      <div class="glossary__category" data-category="concepts">
+        <h3 class="glossary__category-title">Concepts & Notions Techniques</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Algorithme</h4>
+          <p class="glossary-term__definition">Suite d'instructions permettant à une machine ou à un humain d'effectuer une tâche ou un calcul. Ada Lovelace est la première à en avoir conçu un pour une machine.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Boucle (informatique)</h4>
+          <p class="glossary-term__definition">Instruction qui répète une action tant qu'une condition est vraie. Concept déjà présent dans les notes d'Ada Lovelace.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Calcul symbolique</h4>
+          <p class="glossary-term__definition">Idée selon laquelle une machine peut manipuler des symboles (lettres, notes de musique, images) et pas seulement des chiffres. Vision anticipée par Ada Lovelace.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Compilateur</h4>
+          <p class="glossary-term__definition">Programme qui traduit un langage informatique en instructions compréhensibles par une machine. Inventé par Grace Hopper.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Conditionnelle (informatique)</h4>
+          <p class="glossary-term__definition">Instruction qui permet à un programme de prendre une décision selon une condition (si…, alors…). Concept fondamental de la programmation.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Machine analytique</h4>
+          <p class="glossary-term__definition">Machine théorique conçue par Charles Babbage au XIXᵉ siècle. Elle est considérée comme l'ancêtre de l'ordinateur moderne.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Machine à différences</h4>
+          <p class="glossary-term__definition">Première machine de calcul mécanique conçue par Babbage pour automatiser les tables mathématiques.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Nombres de Bernoulli</h4>
+          <p class="glossary-term__definition">Suite de nombres utilisés en mathématiques. Ada Lovelace a écrit un programme permettant de les calculer automatiquement.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+      <div class="glossary__category" data-category="sociologie">
+        <h3 class="glossary__category-title">Notions Sociologiques & Historiques</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Désappropriation</h4>
+          <p class="glossary-term__definition">Concept d'Isabelle Collet : processus par lequel les femmes sont progressivement exclues d'un domaine qu'elles ont pourtant contribué à construire.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Effet Matilda</h4>
+          <p class="glossary-term__definition">Concept de Margaret W. Rossiter : mécanisme par lequel les contributions des femmes scientifiques sont minimisées, ignorées ou attribuées à des hommes.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Effet Matthieu</h4>
+          <p class="glossary-term__definition">Phénomène inverse : les scientifiques déjà reconnus reçoivent davantage de crédit, même pour des travaux qu'ils n'ont pas réalisés.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Invisibilisation</h4>
+          <p class="glossary-term__definition">Processus social et culturel qui efface la présence ou les contributions d'un groupe — ici, les femmes dans les sciences et le numérique.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Patriarcat scientifique</h4>
+          <p class="glossary-term__definition">Système dans lequel les institutions scientifiques valorisent davantage les hommes, leurs travaux et leurs carrières.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+      <div class="glossary__category" data-category="figures">
+        <h3 class="glossary__category-title">Figures Féminines (Pionnières & Oubliées)</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Ada Lovelace (1815–1852)</h4>
+          <p class="glossary-term__definition">Première programmeuse de l'histoire. A conçu le premier algorithme destiné à une machine.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Agnes Pockels (1862–1935)</h4>
+          <p class="glossary-term__definition">Chimiste autodidacte, pionnière de la science des surfaces.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Candace Pert (1946–2013)</h4>
+          <p class="glossary-term__definition">Neurobiologiste ayant découvert les récepteurs opiacés.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Frieda Robscheit-Robbins (1893–1973)</h4>
+          <p class="glossary-term__definition">Co-autrice de travaux majeurs sur l'anémie pernicieuse, longtemps éclipsée.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Gerty Cori (1896–1957)</h4>
+          <p class="glossary-term__definition">Première femme à recevoir le Nobel de médecine (1947).</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Grace Hopper (1906–1992)</h4>
+          <p class="glossary-term__definition">Informaticienne, inventrice du premier compilateur.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Hertha Ayrton (1854–1923)</h4>
+          <p class="glossary-term__definition">Physicienne et mathématicienne, spécialiste de l'arc électrique.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Jocelyn Bell Burnell (née en 1943)</h4>
+          <p class="glossary-term__definition">Découvre le premier pulsar en 1967, mais son directeur reçoit seul le Nobel.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Katherine Johnson, Dorothy Vaughan, Mary Jackson</h4>
+          <p class="glossary-term__definition">Mathématiciennes afro-américaines de la NASA, révélées par Hidden Figures.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Lise Meitner (1878–1968)</h4>
+          <p class="glossary-term__definition">Co-découvre la fission nucléaire, exclue du Nobel attribué à Otto Hahn.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Margaret Hamilton (née en 1936)</h4>
+          <p class="glossary-term__definition">Cheffe du développement logiciel d'Apollo 11.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Mary Somerville (1780–1872)</h4>
+          <p class="glossary-term__definition">Mathématicienne et scientifique, mentor intellectuel d'Ada Lovelace.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Matilda Joslyn Gage (1826–1898)</h4>
+          <p class="glossary-term__definition">Militante féministe ayant dénoncé l'effacement des femmes dans l'histoire.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Rosalind Franklin (1920–1958)</h4>
+          <p class="glossary-term__definition">Ses clichés aux rayons X révèlent la structure de l'ADN, mais elle n'est pas créditée au Nobel.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Trotula (XIᵉ siècle)</h4>
+          <p class="glossary-term__definition">Médecin médiévale, pionnière de la gynécologie.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+      <div class="glossary__category" data-category="ouvrages">
+        <h3 class="glossary__category-title">Ouvrages, Autrices & Essais</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Biographies jeunesse</h4>
+          <p class="glossary-term__definition">Ouvrages illustrés permettant aux enfants de découvrir les femmes scientifiques (Ada Lovelace, Marie Curie, etc.).</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">L'effet Matilda — Margaret W. Rossiter</h4>
+          <p class="glossary-term__definition">Travaux historiques ayant théorisé l'effacement des femmes scientifiques.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">La femme qui en savait trop — Marie Benedict</h4>
+          <p class="glossary-term__definition">Roman biographique mettant en lumière une femme scientifique oubliée.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Les calculs sauvages — Catherine Dufour</h4>
+          <p class="glossary-term__definition">Roman mêlant science, fiction et critique des inégalités de genre.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Les oubliées du numérique — Isabelle Collet (2019)</h4>
+          <p class="glossary-term__definition">Essai sociologique analysant l'invisibilisation des femmes dans l'informatique.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+      <div class="glossary__category" data-category="films">
+        <h3 class="glossary__category-title">Films & Documentaires</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Annihilation (2018)</h4>
+          <p class="glossary-term__definition">Film mettant en scène un groupe de chercheuses, rare dans la SF.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Cherchez la femme (Arte)</h4>
+          <p class="glossary-term__definition">Série documentaire en stop motion retraçant les parcours de femmes oubliées.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Code: Debugging the Gender Gap (2015)</h4>
+          <p class="glossary-term__definition">Documentaire sur les inégalités de genre dans la tech.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Contact (1997)</h4>
+          <p class="glossary-term__definition">Une scientifique voit ses découvertes attribuées à un homme.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Hidden Figures (2016)</h4>
+          <p class="glossary-term__definition">Film sur trois mathématiciennes afro-américaines de la NASA.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Picture a Scientist (2020)</h4>
+          <p class="glossary-term__definition">Documentaire sur le sexisme et le harcèlement dans les sciences.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Radioactive (2019)</h4>
+          <p class="glossary-term__definition">Biopic de Marie Curie, double prix Nobel.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">She Started It (2016)</h4>
+          <p class="glossary-term__definition">Documentaire sur des entrepreneuses dans la tech.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">The Ball Method (2020)</h4>
+          <p class="glossary-term__definition">Court-métrage sur Alice Ball, chimiste effacée de l'histoire.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">The Computers (2014)</h4>
+          <p class="glossary-term__definition">Documentaire sur les six programmeuses de l'ENIAC.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+      <div class="glossary__category" data-category="technologies">
+        <h3 class="glossary__category-title">Technologies & Objets Historiques</h3>
+        
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">ENIAC</h4>
+          <p class="glossary-term__definition">Premier ordinateur électronique programmable, programmé par six femmes.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Machine analytique</h4>
+          <p class="glossary-term__definition">Prototype théorique d'ordinateur universel imaginé par Babbage.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h4 class="glossary-term__name">Machine à différences</h4>
+          <p class="glossary-term__definition">Machine mécanique destinée à automatiser les calculs.</p>
+          <hr class="glossary-term__divider">
+        </article>
+      </div>
+
+    </section>
+                
+        
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Algorithme</h2>
+          <p class="glossary-term__definition">Suite d'instructions logiques permettant de résoudre un problème ou d'effectuer une tâche, souvent utilisée en programmation.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">STEM</h2>
+          <p class="glossary-term__definition">Acronyme anglophone pour Science, Technology, Engineering, and Mathematics — domaines où les femmes sont historiquement sous-représentées.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Neuropeptides</h2>
+          <p class="glossary-term__definition">Molécules impliquées dans la transmission de signaux dans le système nerveux, découvertes notamment par Candace Pert.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Science des surfaces</h2>
+          <p class="glossary-term__definition">Branche de la chimie qui étudie les propriétés physiques et chimiques des interfaces entre différents milieux. Fondée par Agnes Pockels.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Fission nucléaire</h2>
+          <p class="glossary-term__definition">Réaction physique qui libère de l'énergie en divisant un noyau atomique. Co-découverte par Lise Meitner.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Machine analytique</h2>
+          <p class="glossary-term__definition">Calculateur mécanique conçu par Charles Babbage dans les années 1830, considéré comme le précurseur de l'ordinateur moderne.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+        <article class="glossary-term">
+          <h2 class="glossary-term__name">Effet Matilda</h2>
+          <p class="glossary-term__definition">Phénomène désignant le déni ou la minimisation de la contribution des femmes scientifiques au profit de leurs collègues masculins, théorisé par Margaret W. Rossiter en 1993.</p>
+          <hr class="glossary-term__divider">
+        </article>
+
+    </section>
+
+    <footer class="legal">
+      <p class="legal__text">© 2025 - Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" class="legal__link" target="_blank" rel="noopener noreferrer">MMi de Montbéliard</a></p>
+    </footer>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__logo-link" href="index.html">
+      <img
+        class="footer__logo"
+        src="../assets/icons/logo_light.svg"
+        alt="Logo AdaQuest"
+        loading="lazy"/>
+    </a>
+
+    <div class="footer__content">
+      <div class="footer__section">
+        <h5 class="footer__title">Formulaire de contact :</h5>
+        <p class="footer__text">Nous contactez via le formulaire de contact.</p>
+        <a class="footer__link" href="contact.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Autres projets :</h5>
+        <p class="footer__text">Projets réalisés par les élèves de MMI dans le cadre du projet Matilda</p>
+        <a class="footer__link" href="projets.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">À propos</h5>
+        <p class="footer__text">Ce site a pour objectif de sensibiliser au phénomène de l'effet Matilda et de rendre hommage aux femmes scientifiques oubliées de l'histoire.</p>
+        <a class="footer__link" href="apropos.html">PLUS D'INFOS</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Contact :</h5>
+        <p class="footer__text">Site réalisé par DHAFER Khaoula MM1 C2</p>
+        <address class="footer__address">
+          <a class="footer__email" href="mailto:khaoula.dhafer@univ-fcomte.fr">khaoula.dhafer@univ-fcomte.fr</a>
+        </address>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Mention légale :</h5>
+        <p class="footer__text">© 2025 - Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a></p>
+        <a class="footer__link" href="mentionslegales.html">Plus d'infos</a>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <img
+        class="footer__logo-mmi"
+        src="../assets/img/mmi_white.avif"
+        alt="Logo MMI Montbéliard"
+        width="100"
+        height="50"
+        loading="lazy" />
+      <img
+        class="footer__logo-umlp"
+        src="../assets/img/logo_umlp-white.avif"
+        alt="Logo Université Marie & Louis Pasteur"
+        width="150"
+        height="50"
+        loading="lazy" />
+    </div>
+  </div>
+</footer>
+</body>
+</html>
