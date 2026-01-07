@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Ada Lovelace: first programmer in history. Discover her visionary algorithm for Babbage's Analytical Engine and how she predicted the future of computing." />
+  <title>Ada Lovelace - AdaQuest</title>
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Homenaje&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <script type="module" src="../src/js/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header__left">
+    <a class="header__link" href="index.html">
+      <img
+        class="header__logo"
+        src="../assets/icons/logo_icon_light.svg"
+        alt="Logo AdaQuest" />
+    </a>
+    <a href="../fr/adalovelace.html" class="header__lang" lang="fr">🇫🇷 FR</a>
+  </div>
+
+  <div class="header__right">
+    <button
+      class="header__menu-btn menu-btn"
+      aria-label="menu"
+      aria-expanded="false"
+      aria-controls="mainNav">
+      <span
+        class="menu-btn__bar menu-btn__bar--top"
+        aria-hidden="true"></span>
+      <span
+        class="menu-btn__bar menu-btn__bar--bottom"
+        aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <nav class="header__menu menu" id="mainNav" aria-label="Main navigation" hidden>
+    <ul class="menu__list u-list-unstyled">
+      <li class="menu__item">
+        <a class="menu__link" href="adalovelace.html">Who is Ada?</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="lesoublieesdunumerique.html">Forgotten Women in Tech</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="leffetmatilda.html">The Matilda Effect</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="cinematographie.html">Cinematography</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="litterature.html">Literature</a>
+      </li>
+    </ul>
+    <ul class="menu__secondary-list u-list-unstyled">
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="contact.html">Contact Form</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="glossaire.html">Glossary</a>
+      </li>
+      <li class="menu__secondary-item">
+        <a class="menu__secondary-link" href="projets.html">Other Projects</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1 class="hero__title">Ada Lovelace</h1>
+    <p class="hero__subtitle">The First Programmer in History</p>
+  </div>
+
+  <article class="article">
+    <nav class="article__nav" aria-label="Table of Contents">
+      <ul class="article__nav-list u-list-unstyled">
+        <li class="article__nav-item"><a class="article__nav-link" href="#intro">Introduction</a></li>
+        <li class="article__nav-item"><a class="article__nav-link" href="#algorithm">The Algorithm</a></li>
+        <li class="article__nav-item"><a class="article__nav-link" href="#vision">Her Vision</a></li>
+        <li class="article__nav-item"><a class="article__nav-link" href="#heritage">Legacy</a></li>
+        <li class="article__nav-item"><a class="article__nav-link" href="#cta">Learn More</a></li>
+      </ul>
+    </nav>
+
+    <section class="article__section" id="intro">
+      <h2 class="article__heading">Who is Ada Lovelace?</h2>
+      <figure class="article__figure">
+        <img
+          class="article__img"
+          src="../assets/img/ada_intro.avif"
+          alt="Daguerreotype photo of Ada Lovelace"
+          loading="lazy" />
+        <figcaption class="article__caption">Ada Lovelace, circa 1843</figcaption>
+      </figure>
+      
+      <p class="article__text">
+        Ada Lovelace (1815-1852) was a British mathematician and writer, known for her work on Charles Babbage's Analytical Engine. She is considered the first computer programmer, having written what is recognized as the first algorithm intended to be processed by a machine.
+      </p>
+
+      <p class="article__text">
+        Daughter of the poet Lord Byron and mathematician Annabella Milbanke, Ada was encouraged from childhood to pursue mathematics and science, unusual for a woman of her time.
+      </p>
+    </section>
+
+    <section class="article__section" id="algorithm">
+      <h2 class="article__heading">The Revolutionary Algorithm</h2>
+      
+      <figure class="article__figure">
+        <img
+          class="article__img"
+          src="../assets/img/art1_calcul.avif"
+          alt="Manuscript of Ada Lovelace's algorithm"
+          loading="lazy" />
+        <figcaption class="article__caption">The first algorithm - Note G</figcaption>
+      </figure>
+
+      <p class="article__text">
+        In 1843, Ada translated an article about Babbage's Analytical Engine from French to English. She added her own notes, which were three times longer than the original article. In these notes, she described how the machine could be programmed to calculate Bernoulli numbers - the first published algorithm.
+      </p>
+
+      <p class="article__text">
+        Her "Note G" is considered the first computer program in history, demonstrating that the machine could go beyond simple calculations.
+      </p>
+    </section>
+
+    <section class="article__section" id="vision">
+      <h2 class="article__heading">A Visionary Ahead of Her Time</h2>
+      
+      <p class="article__text">
+        What made Ada truly exceptional was her vision of what computers could become. While Babbage saw his machine as a powerful calculator, Ada envisioned something much broader.
+      </p>
+
+      <blockquote class="article__quote">
+        <p>"The Analytical Engine might act upon other things besides number... the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent."</p>
+        <cite>- Ada Lovelace, Note A, 1843</cite>
+      </blockquote>
+
+      <p class="article__text">
+        She imagined that machines could manipulate symbols according to rules, and that numbers could represent anything - music, images, words. This vision wouldn't be realized until a century later with modern computers.
+      </p>
+    </section>
+
+    <section class="article__section" id="heritage">
+      <h2 class="article__heading">A Forgotten Legacy</h2>
+      
+      <figure class="article__figure">
+        <img
+          class="article__img"
+          src="../assets/img/art1_hommage.avif"
+          alt="Commemorative plaque for Ada Lovelace"
+          loading="lazy" />
+        <figcaption class="article__caption">Recognition comes late</figcaption>
+      </figure>
+
+      <p class="article__text">
+        Despite her groundbreaking work, Ada Lovelace's contributions were forgotten for nearly a century. It wasn't until the 1950s, with the rise of computers, that historians rediscovered her notes and recognized their significance.
+      </p>
+
+      <p class="article__text">
+        Today, Ada Lovelace Day (second Tuesday of October) celebrates women in science, technology, engineering and mathematics. The U.S. Department of Defense even named a programming language "Ada" in her honor in 1980.
+      </p>
+    </section>
+
+    <footer class="article__footer" id="cta">
+      <h2 class="article__heading">Continue Your Journey</h2>
+      <div class="cta">
+        <a class="cta__link" href="leffetmatilda.html">Discover the Matilda Effect</a>
+        <a class="cta__link" href="lesoublieesdunumerique.html">Other Forgotten Women</a>
+      </div>
+    </footer>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__logo-link" href="index.html">
+      <img
+        class="footer__logo"
+        src="../assets/icons/logo_light.svg"
+        alt="Logo AdaQuest"
+        loading="lazy"/>
+    </a>
+
+    <div class="footer__content">
+      <div class="footer__section">
+        <h5 class="footer__title">Contact form:</h5>
+        <p class="footer__text">Contact us via the contact form.</p>
+        <a class="footer__link" href="contact.html">MORE INFO</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Other projects:</h5>
+        <p class="footer__text">Projects carried out by MMI students as part of the Matilda project</p>
+        <a class="footer__link" href="projets.html">MORE INFO</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">About</h5>
+        <p class="footer__text">This site aims to raise awareness of the Matilda effect and pay tribute to women scientists forgotten by history.</p>
+        <a class="footer__link" href="apropos.html">MORE INFO</a>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Contact:</h5>
+        <p class="footer__text">Website created by DHAFER Khaoula MM1 C2</p>
+        <address class="footer__address">
+          <a class="footer__email" href="mailto:khaoula.dhafer@univ-fcomte.fr">khaoula.dhafer@univ-fcomte.fr</a>
+        </address>
+      </div>
+
+      <div class="footer__section">
+        <h5 class="footer__title">Legal notice:</h5>
+        <p class="footer__text">© 2025 - Project completed in 2025 as part of an educational exercise at the <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi department of Montbéliard</a></p>
+        <a class="footer__link" href="mentionslegales.html">More info</a>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <img
+        class="footer__logo-mmi"
+        src="../assets/img/mmi_white.avif"
+        alt="Logo MMI Montbéliard"
+        width="100"
+        height="50"
+        loading="lazy" />
+      <img
+        class="footer__logo-umlp"
+        src="../assets/img/logo_umlp-white.avif"
+        alt="Logo Université Marie & Louis Pasteur"
+        width="150"
+        height="50"
+        loading="lazy" />
+    </div>
+  </div>
+</footer>
+</body>
+</html>

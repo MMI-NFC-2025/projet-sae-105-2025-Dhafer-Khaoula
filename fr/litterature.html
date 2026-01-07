@@ -22,25 +22,30 @@
 </head>
 <body>
 <header class="header">
-  <a class="header__link" href="index.html">
-    <img
-      class="header__logo header__logo--dark"
-      src="../assets/icons/logo_icon_dark.svg"
-      alt="Logo AdaQuest" />
-  </a>
+  <div class="header__left">
+    <a class="header__link" href="index.html">
+      <img
+        class="header__logo header__logo--dark"
+        src="../assets/icons/logo_icon_dark.svg"
+        alt="Logo AdaQuest" />
+    </a>
+    <a href="../en/litterature.html" class="header__lang" lang="en">🇬🇧 EN</a>
+  </div>
 
-  <button
-    class="header__menu-btn menu-btn"
-    aria-label="menu"
-    aria-expanded="false"
-    aria-controls="mainNav">
-    <span
-      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--top"
-      aria-hidden="true"></span>
-    <span
-      class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--bottom"
-      aria-hidden="true"></span>
-  </button>
+  <div class="header__right">
+    <button
+      class="header__menu-btn menu-btn"
+      aria-label="menu"
+      aria-expanded="false"
+      aria-controls="mainNav">
+      <span
+        class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--top"
+        aria-hidden="true"></span>
+      <span
+        class="menu-btn__bar menu-btn__bar--dark menu-btn__bar--bottom"
+        aria-hidden="true"></span>
+    </button>
+  </div>
 
   <nav class="header__menu menu" id="mainNav" aria-label="Navigation principale" hidden>
     <ul class="menu__list u-list-unstyled">

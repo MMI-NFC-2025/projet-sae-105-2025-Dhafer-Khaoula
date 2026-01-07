@@ -2,15 +2,109 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=fr/index.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirection...</title>
-  <script>
-    window.location.href = "fr/index.html";
-  </script>
+  <meta name="description" content="AdaQuest - Découvrez l'effet Matilda et les femmes scientifiques oubliées de l'histoire">
+  <title>AdaQuest - Choisissez votre langue / Choose your language</title>
+  <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900&family=Cinzel:wght@400..900&family=Homenaje&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Alegreya Sans', sans-serif;
+      background-color: #F5F1FA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .language-selector {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      color: #2D1B4E;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: #2D1B4E;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .language-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .language-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      border: 2px solid #E8C4D8;
+      border-radius: 8px;
+      color: #2D1B4E;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      min-width: 200px;
+    }
+
+    .language-link:hover {
+      background-color: #E89AC7;
+      border-color: #E89AC7;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body>
-  <p>Redirection vers la page d'accueil...</p>
-  <p>Si vous n'êtes pas redirigé, <a href="fr/index.html">cliquez ici</a>.</p>
+  <div class="language-selector">
+    <img src="assets/icons/logo_icon_dark.svg" alt="AdaQuest Logo" class="logo">
+    <h1>AdaQuest</h1>
+    <p class="subtitle">
+      Choisissez votre langue / Choose your language
+    </p>
+    <div class="language-links">
+      <a href="fr/index.html" class="language-link" lang="fr">
+        🇫🇷 Français
+      </a>
+      <a href="en/index.html" class="language-link" lang="en">
+        🇬🇧 English
+      </a>
+    </div>
+  </div>
 </body>
 </html>
