@@ -1,0 +1,168 @@
+/* Section intro-sections de la page d'accueil */
+
+.intro-sections {
+    padding: var(--space-home) var(--space-m);
+    background-color: var(--background);
+}
+
+.intro-sections__header {
+    margin-bottom: var(--space-home);
+    text-align: left;
+}
+
+.intro-sections__heading {
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-black);
+    font-size: var(--font-size-xl);
+    color: var(--dark-pink);
+    line-height: 1.1;
+    margin: 0 0 var(--space-unit) 0;
+}
+
+.intro-sections__description {
+    font-family: var(--font-family-headings-2);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
+    color: var(--dark-purple);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.intro-sections__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.intro-sections__item {
+    background-color: var(--white);
+    border-radius: var(--radius-m);
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-unit);
+}
+
+.intro-sections__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--radius-s);
+}
+
+.intro-sections__title {
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-black);
+    font-size: var(--font-size-l);
+    color: var(--regular-pink);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.intro-sections__subtitle {
+    font-family: var(--font-family-headings-2);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-m);
+    color: var(--text-1);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.intro-sections__text {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-xs);
+    color: var(--text-1);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.intro-sections__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: var(--space-unit) var(--space-m);
+    background-color: var(--white);
+    border: 2px solid var(--light-pink);
+    border-radius: var(--radius-s);
+    color: var(--text-1);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.intro-sections__link::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/icons/small_short-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro-sections__link:hover {
+    background-color: var(--regular-pink);
+    border-color: var(--regular-pink);
+    color: var(--white);
+}
+
+.intro-sections__link:hover::before {
+    filter: brightness(0) invert(1);
+}
+
+/* Footer avec boutons de navigation rapide */
+.intro-sections__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: var(--space-home);
+}
+
+.intro-sections__footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: var(--space-unit) var(--space-m);
+    background-color: var(--white);
+    border: 2px solid var(--light-pink);
+    border-radius: var(--radius-s);
+    color: var(--text-1);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.intro-sections__footer-link::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../assets/icons/small_short-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro-sections__footer-link:hover {
+    background-color: var(--regular-pink);
+    border-color: var(--regular-pink);
+    color: var(--white);
+}
+
+.intro-sections__footer-link:hover::before {
+    filter: brightness(0) invert(1);
+}

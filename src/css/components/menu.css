@@ -1,0 +1,149 @@
+/* Menu button */
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.menu-btn__bar {
+    display: block;
+    background: var(--text-1);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 20;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-btn__bar--top {
+    bottom: 10px;
+}
+
+.menu-btn__bar--bottom {
+    top: 10px;
+}
+
+.menu-btn__bar--light {
+    background: var(--white);
+}
+
+/* Animation du bouton quand le menu est ouvert */
+.menu-btn[aria-expanded="true"] .menu-btn__bar--top {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%) rotate(45deg);
+    background: var(--white);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    background: var(--white);
+}
+
+/* Menu panel */
+.menu {
+    visibility: visible;
+    position: fixed;
+    inset: 0;
+    z-index: 12;
+    background-color: transparent;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-home);
+}
+
+/* Fond rose derrière le menu */
+.menu::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: var(--light-pink);
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu[hidden] {
+    visibility: hidden;
+}
+
+.menu[hidden]::before {
+    transform: translateY(-100vh);
+    transition-delay: 0.25s;
+}
+
+/* Contenu du menu au-dessus du fond */
+.menu__list,
+.menu__secondary-list {
+    position: relative;
+    z-index: 13;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.menu__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--font-family-headings-2);
+    font-weight: var(--font-weight-regular);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu__link::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/icons/small_short-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.menu__link:hover {
+    color: var(--regular-pink);
+}
+
+.menu__secondary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.menu__secondary-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    transition: color 0.3s ease;
+}
+
+.menu__secondary-link:hover {
+    color: var(--regular-pink);
+}

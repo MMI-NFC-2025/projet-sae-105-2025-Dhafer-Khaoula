@@ -1,9 +1,32 @@
 .header {
-    
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80px;
     background-color: var(--white);
+    padding: var(--space-2xl) var(--space-4xl);
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    }
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header__link {
+    display: block;
+    position: relative;
+    z-index: 20;
+}
+
+.header__logo {
+    transition: transform 0.3s ease;
+    transform-origin: top left;
+}
+
+.header__logo--light {
+    filter: invert(1);
+}
+
+.header__logo--extend {
+    transform: scale(1.3);
+    filter: invert(1);
+}

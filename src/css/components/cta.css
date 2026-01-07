@@ -1,0 +1,23 @@
+.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-unit) var(--space-m);
+    background-color: var(--white);
+    border: 2px solid var(--light-pink);
+    border-radius: var(--radius-s);
+    color: var(--text-1);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--regular-pink);
+    border-color: var(--regular-pink);
+    color: var(--white);
+}

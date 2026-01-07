@@ -1,0 +1,133 @@
+/* Glossary Section */
+.page {
+    min-height: 100vh;
+    background-color: var(--background);
+    padding: var(--space-section);
+    padding-top: calc(var(--space-section) + 80px);
+}
+
+.glossary {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glossary__title {
+    font-family: var(--font-family-headings);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-m);
+}
+
+.glossary__intro {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xs);
+    color: var(--text-1);
+    line-height: 1.6;
+    margin-bottom: var(--space-home);
+    max-width: 800px;
+}
+
+/* Filters */
+.glossary__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: var(--space-section);
+}
+
+.glossary__filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--white);
+    border: 2px solid var(--extralight-purple);
+    border-radius: var(--radius-s);
+    font-family: var(--font-family-body);
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glossary__filter-btn:hover {
+    border-color: var(--regular-pink);
+    color: var(--dark-pink);
+}
+
+.glossary__filter-btn--active {
+    background-color: var(--dark-pink);
+    border-color: var(--dark-pink);
+    color: var(--white);
+}
+
+/* Category */
+.glossary__category {
+    margin-bottom: var(--space-section);
+}
+
+.glossary__category-title {
+    font-family: var(--font-family-headings-2);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-pink);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-home);
+}
+
+/* Term */
+.glossary-term {
+    margin-bottom: var(--space-m);
+}
+
+.glossary-term__name {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-1);
+    margin-bottom: 0.5rem;
+}
+
+.glossary-term__definition {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xs);
+    color: var(--text-1);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.glossary-term__divider {
+    border: none;
+    border-top: 1px solid var(--extralight-purple);
+    margin: var(--space-m) 0;
+}
+
+/* Legal Footer */
+.legal {
+    margin-top: var(--space-section);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--extralight-purple);
+    text-align: center;
+}
+
+.legal__text {
+    font-family: var(--font-family-body);
+    font-size: 0.75rem;
+    color: var(--text-1);
+    line-height: 1.6;
+}
+
+.legal__link {
+    color: var(--dark-pink);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal__link:hover {
+    color: var(--bright-purple);
+    text-decoration: underline;
+}

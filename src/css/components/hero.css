@@ -1,0 +1,134 @@
+/* Hero de la page d'accueil uniquement */
+.hero--home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-m);
+  padding: var(--space-home);
+  padding-bottom: 3rem;
+  color: var(--white);
+  background-image: url("/assets/img/hero.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__intro {
+  font-family: var(--font-family-headings-1);
+  font-size: var(--font-size-xl);
+}
+
+.hero__title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.hero__subtitle {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-family-headings-2);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);
+  color: var(--white);
+  line-height: 1.4;
+  margin: 0;
+  max-width: 300px;
+}
+
+.hero__cta {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--space-unit) var(--space-m);
+  background-color: var(--white);
+  color: var(--text-1);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: var(--radius-s);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.hero__cta::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/icons/small_short-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__cta:hover {
+  background-color: var(--regular-pink);
+  color: var(--white);
+  transform: translateX(5px);
+}
+
+.hero__cta:hover::before {
+  filter: brightness(0) invert(1);
+}
+
+/* Hero des pages internes */
+.hero--ada,
+.hero--tech,
+.hero--cinema,
+.hero--literature,
+.hero--effect-matilda {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-m);
+  padding: var(--space-home);
+  padding-bottom: 3rem;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.hero--ada img,
+.hero--tech img,
+.hero--cinema img,
+.hero--literature img,
+.hero--effect-matilda img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero--ada .hero__title,
+.hero--tech .hero__title,
+.hero--cinema .hero__title,
+.hero--literature .hero__title,
+.hero--effect-matilda .hero__title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
